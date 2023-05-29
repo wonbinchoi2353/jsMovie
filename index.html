@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>내배캠 영화 콜렉션</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg"></div>
-    내용
+    <header>
+        <h1>최고 평점 영화 콜렉션</h1>
+    </header>
+    <form class="search" onsubmit="">
+        <label>영화 검색 : </label>
+        <input type="text" id="search-input" placeholder="영화 제목을 검색해 보세요">
+        <button type="submit" id="search-btn">검색</button>
+    </form>
+    <section class="card_list" id="grid">
+        <div class="movie-card" id="card">
+            <img id="img" src="">
+            <h3 id="title">영화 제목</h3>
+            <p id="overview">영화 설명</p>
+            <p id="vote_average">영화 평점</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
